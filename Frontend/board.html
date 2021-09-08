@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/board.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <title>우체통</title>
+    </head>
+    <body>
+        <div class="container">
+            <header style="height: 50px; padding-top: 10px;">
+                <div style="position: relative; padding-bottom: 10px; height: auto;">    
+                    <input type="button" value="받은 것만 보기" id="postcheck" class="btn btn-light" style="border: 1px gray solid; float:left; width: 120px;"/>
+                    <button class="btn btn-light" onclick="location.href='fixinfo.html'" style="border: 1px gray solid; float:right;">회원정보 수정</button>                 
+                    <button class="btn btn-light" onclick="location.href='write.html'" style="border: 1px gray solid; float:right; margin-right: 10px;">편지 쓰기</button>  
+                </div>
+            </header>
+                
+                <table class="table table-sm" style="width:inherit; text-align:center; margin-top: 10px">
+                    <thead>
+                        <tr>
+                            <th width="0%" style="text-align:center">제목</th>
+                            <th width="50px"></th>
+                            <th width="50px"></th>
+                            <th style="text-align:center">보낸 날짜</th>
+                            <th style="text-align:center">남은 날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "board">
+                        <tr width="0px">
+                    </tbody>
+                </table>
+
+                <div style="position: relative; padding-bottom: 10px;">                  
+                    <button id="logout" class="btn btn-light" style="border: 1px gray solid; float:right; margin-right: 10px;">로그아웃</button>  
+                </div>
+        </div>
+    </body>
+</html>
